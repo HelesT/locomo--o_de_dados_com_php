@@ -5,21 +5,23 @@ include("conecta.php");
 $sql = "SELECT id, texto FROM conteudos";
 $result = $pdo->query($sql);
 
+// Inicia a variável para armazenar o conteúdo
+$conteudo = "";
+
 if ($result->rowCount() > 0) {
-    // Exibe o conteúdo recuperado em outro HTML
+    // Exibe o conteúdo recuperado
     while ($row = $result->fetch()) {
-        echo "<div class='conteudo'>";
-        echo "<p>" . $row["texto"] . "</p>";
-        echo "<form action='excluir.php' method='post'>";
-        echo "<input type='hidden' name='id' value='" . $row["id"] . "'>";
-        echo "<input type='submit' name='excluir_" . $row["id"] . "' value='Excluir'>";
-        echo "</form>";
-        echo "</div>";
+        $conteudo .= "<p>" . $row["texto"] . "</p>";
+        $conteudo .= "<form action='excluir.php' method='post'>";
+        $conteudo .= "<input type='hidden' name='id' value='" . $row["id"] . "'>";
+        $conteudo .= "<input type='submit' name='excluir_" . $row["id"] . "' value='Excluir'>";
+        $conteudo .= "</form>";
     }
 } else {
-    echo "Nenhum conteúdo encontrado.";
+    $conteudo = "Nenhum conteúdo encontrado.";
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,14 +29,17 @@ if ($result->rowCount() > 0) {
     <link rel="stylesheet" href="produtos.css" type="text/css">
     <style>
         /* Estilos CSS personalizados */
-        .conteudo {
+        #divEspecifica {
             background-color: #f1f1f1;
+            width: 700px;
             padding: 10px;
             margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    
+    <div id="divEspecifica">
+        <?php echo $conteudo; ?>
+    </div>
 </body>
 </html>

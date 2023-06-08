@@ -1,0 +1,374 @@
+body {
+    background-image: linear-gradient(45deg, purple, aquamarine);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .cabecalho {
+    background-color:rgb(14, 14, 14);
+    background-size: cover;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 20px;
+    animation: descer 0.5s;
+    z-index: 2;
+  }
+  
+  .cabecalho1 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .cabecalho2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .cabecalho3 {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .sorvelivery {
+    margin-top: 0px;
+  }
+  
+  .logo {
+    margin-top: 25px;
+  }
+  
+  a:visited {
+    color: rgb(35, 200, 200);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: rgb(35, 200, 200);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: rgb(35, 200, 200);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: brown;
+    background-color: transparent;
+    }
+    input[type="checkbox"]
+    {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ nav
+    {
+        margin-bottom: 20px;
+    }
+    nav
+    {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        transition: all .5s;
+    }
+    ul
+    {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+    .D0
+    {
+    width: 70%;
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
+    .D1
+{
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    justify-items: center;
+    justify-content: space-around;
+}
+.D2
+    {
+        background-color: rgb(35, 200, 200);
+        width: 99.5%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-color: purple;
+        border: 1px 1px;
+        border-style: solid;
+    }
+    .bloco
+    {
+        background-color: rgb(35, 200, 200);
+        width: 90%;
+        margin-left: auto   ;
+        margin-right: auto;
+        margin-top: 20px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        border-color: purple;
+        border: 1px 1px;
+        border-radius: 2%;
+        border-style: solid;
+        padding: 15px;
+    }
+    .bloco2
+    {
+        background-color: rgb(28, 221, 221);
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center; 
+        border: 1px 1px;
+        border-radius: 2%;
+        padding: 15px;
+    }
+    .Partição1
+    {
+        width: 40%;
+        height: 100%;
+    }
+    .Partição2
+    {
+        width: 55%;
+        height: 90%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .aba_produtos
+    {
+        width:45%;
+        height: 100%;
+        background-color: rgb(35, 35, 35);
+        color: white;
+        font-size: 25px;
+        font-family: 'Source Sans Pro', sans-serif
+    }
+    .aba_compra
+    {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .finalizar_compra
+    {
+        width: 80%;
+        height: 70px;
+        border-radius:30px;
+        background-color: red;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+    }
+    .total_compra
+    {
+        width: 80%;
+        height: 90px;
+        border-radius:40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border: 1px 1px;
+        border-style: solid;
+        border-color: beige;
+        background-color: rgb(24, 24, 24);
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+    }
+    .D5
+    {
+        background-color: rgb(30, 30, 30);
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        margin-bottom: 10%;
+    }
+    .preco_compra
+    {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .compra
+    {
+        width: 65px;
+        height: 25px;
+        border: 1px 1px;
+        border-style: solid;
+        border-color: beige;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        border-radius: 0%;
+        font-size: 25px;
+        margin-left: 150px;
+    }
+    .fale_conoscodiv
+    {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    background-color:black;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    color: white;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    z-index: 0;
+    }
+    
+    .fale_conosco_texto
+    {
+    width: 110px;
+    height: 22px;
+    color: rgb(35, 200, 200) ;
+    }
+    .caixadetexto
+    {
+    width: 75%;
+    height: 100%;
+    margin-bottom: 5px;
+    }
+    .enviartexto
+    {
+    width: 15%;
+    height: 125%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    }
+    .resposta
+    {
+    background-color: rgb(41, 41, 41);
+    width: 90%;
+    height: 85%;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    display: flex;
+    margin-bottom: 5px;
+    }
+    .row100
+    {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 20px;
+    }
+    ::-webkit-scrollbar
+    {
+    width: 20px;
+    background-color: black;
+    }
+    ::-webkit-scrollbar-track
+    {
+    border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb
+    {
+        background:rgb(8, 8, 8);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover
+    {
+        background: rgb(29, 29, 29);
+    }

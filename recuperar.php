@@ -26,7 +26,7 @@ if ($result->rowCount() > 0) {
 <html>
 <head>
     <title>Armazenar Conteúdo</title>
-    <link rel="stylesheet" href="produtos.css" type="text/css">
+    <link rel="stylesheet" href="Pag5.css" type="text/css">
     <style>
         /* Estilos CSS personalizados */
         #divEspecifica {

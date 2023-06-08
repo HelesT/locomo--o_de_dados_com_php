@@ -15,7 +15,7 @@ if (isset($_POST['id'])) {
             $stmt->execute();
 
             // Redireciona de volta à página recuperar.php
-            header("Location: recuperar.php");
+            header("Location: Pag5.php");
             exit();
         } catch (PDOException $erro) {
             echo "Erro ao excluir o conteúdo: " . $erro->getMessage();

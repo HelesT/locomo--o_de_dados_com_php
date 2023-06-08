@@ -27,15 +27,6 @@ if ($result->rowCount() > 0) {
 <head>
     <title>Armazenar Conteúdo</title>
     <link rel="stylesheet" href="Pag5.css" type="text/css">
-    <style>
-        /* Estilos CSS personalizados */
-        #divEspecifica {
-            background-color: #f1f1f1;
-            width: 700px;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
     <div id="divEspecifica">

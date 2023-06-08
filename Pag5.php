@@ -57,7 +57,7 @@
             <font style="color: black;font-family: 'Source Sans Pro', sans-serif;font-size: 60px;margin-left: 10%;">Carrinho</font>
         </div>
         <div class="D1">
-            <div class="aba_produtos">
+            <div class="aba_produtos" style="width: 65%;">
             
             <?php
 include("conecta.php");

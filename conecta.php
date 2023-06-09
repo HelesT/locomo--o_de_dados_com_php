@@ -43,8 +43,6 @@ if (isset($_POST['adicionarChococream'])) {
             $consulta = "INSERT INTO conteudos (texto) VALUES (?)";
             $stmt = $pdo->prepare($consulta);
             $stmt->execute([$conteudo]);
-
-            echo "<p>Conteúdo adicionado com sucesso!</p>";
         } catch (PDOException $erro) {
             echo "<p>Erro ao adicionar conteúdo: " . $erro->getMessage() . "</p>";
         }
